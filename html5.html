@@ -1,0 +1,186 @@
+<!DOCTYPE html>  <!--声明文档-->
+<html><!--文档类型-->
+	<head><!--头信息-->
+		<title>html5Demo</title>
+		<meta charset=UTF-8"><!--元信息-->
+		<base href="#"><!--所有标签默认地址-->
+		<link hrel="mystyle.css"><!--外部CSS-->
+		<script src="my.js">//内部JS</script><!--引入JS-->
+		<style>
+		#div{background-color:red}
+		#span{background-color:red}
+		</style><!--写入CSS-->
+	</head>
+	<body>
+	<h5>h1->h6依次减小的字体</h5>
+	<p>段落<dialog open> dialog</dialog></p>
+	<iframe name='iframe' width='500' height='50' src='embed.html'></iframe>
+	<hr/><!--分隔线-->
+	<abbr title="暂无缩写">缩写</abbr>
+	<address>联系方式</address>
+	<b>加黑</b>
+	<strong>加粗</strong>
+	<small>小号字</small>
+	<bdo dir="rtl">字符顺序<bdi>末尾正序</bdi></bdo>
+	<blockquote>blockquote</blockquote>
+	<q>q</q>
+	<code>code</code>
+	<samp>samp</samp>
+	<pre>	
+		function pre(){
+			echo "pre";
+			}</pre>
+	<cite>cite</cite>
+	<dfn>dfn</dfn>
+	<i>i</i>
+	<em>强调文本</em>
+	<mark>mark</mark>
+	<kbd>键盘文本esc</kbd>
+	<meter value='0.3' min='0' max='1'></meter>
+	<progress value='0.3' min='0' max='1'></progress>
+	<br/><!--换行-->
+	<ruby>ruby<rp>rp</rp><rt>rt</rt><rp>rp</rp></ruby>
+	<s>s</s>
+	<del>del</del>
+	<sub>sub</sub>
+	<sup>sup</sup>
+	<time>time</time>
+	<ins>ins</ins>
+	<u>u</u>
+	<var>var</var>
+	<wbr>wbr</wbr>
+
+	
+	<nav>
+		<a href="#" target='_blank'>nav-a1</a><!--download="test"-->
+		<a href="#" target='_blank'>nav-a2</a>
+	</nav>
+	
+	<ul>
+		<li>ul-li1</li>
+		<li>ul-li2</li>
+	</ul>
+	
+	<ol>
+		<li>ol-li1</li>
+		<li>ol-li2</li>
+	</ol>
+	<dl>
+		<dt>dl-dt</dt>
+		<dd>dl-dd</dd>
+	</dl>
+	
+	<table border='1'>
+	 <caption>table-caption</caption>
+	 <thead>
+	 <th>thead-th1</th>
+	 <th>thead-th2</th>
+	 </thead>
+	 <tbody>
+		<tr>
+			<td>tbody-tr1-td1</td>
+			<td>tbody-tr1-td2</td>
+		</tr>
+		<tr>
+			<td>tbody-tr2-td1</td>
+			<td>tbody-tr2-td2</td>
+		</tr>
+	 </tbody>
+	
+	 <tfoot>
+		<tr>
+			<td colspan='2'>tfoot-tr-td</td>
+		</tr>	 
+	 </tfoot>
+	</table>
+	
+	<span id='span'>span</span>
+	<div id='div'>div</div>
+	<article>article</article>
+	<aside>aside</aside>
+	<header>header</header>
+	<footer>footer</footer>
+	<section>section</section>
+	<details open>
+	<summary>summary</summary>
+	details</details>
+	
+	<!--accept-charset="ISO-8859-1" 
+	enctype='x-www-form-urlencoded'|'multipart/form-data'|'text/plain'
+	target='_self'|'_blank'|'_parent'|'_top'|'iframe_name'
+	<input pattern='[a-z]{3}' form='formid' disabled readonly />
+	-->
+	<form id='formid'target='_self' enctype='multipart/form-data' name="form" novalidate accept-charset="UTF-8" autocomplete="on" action="#" method='get' oninput='result.value=input.value'>
+		<input type='text' name='text' required placeholder='placeholder' list='list' autofocus />
+		<input type='password' name='password'/>	
+		<input type='checkbox' name='checkbox' checked />	
+		<label for='radio1'>label-radio1</label>
+		<input type='radio'  id='radio1' name='radio' value='radio1'>
+		<label for='radio2'>label-radio2</label>
+		<input type='radio'  id='radio2' name='radio' value='radio2'>					
+		<input type='date' name='date'/>			
+		<input type='datetime-local' name='datetime-local'/>
+		<input type='time' name='time'/>
+		<input type='week' name='week'/>
+		<input type='month' name='month'/>
+		<input type='file' name='file' multiple />	
+		<input type='email' name='email' />	
+		<input type='url' name='url'/>
+		<input type='color' name='color'/>
+		<input type='number' name='number' min='0' max='10' step='2' />
+		<input type='range' name='rang' min='0' max='10'  />
+		<input type='search' name='search'/>
+		<input type='reset' name='reset'/>
+		<input type='hidden' name='hidden'/>
+		<input type='button'  value='button'onclick='javascript:alert(1);'/>
+		<input type='submit' value='submit'/>
+		<input type='image' alt='imgsub' src='test.jpg' width='20' height='20'/>		
+		<datalist id='list'>
+			<option>datalist-option</option>
+		</datalist>
+		<textarea>textarea</textarea>
+		<select name='select'>
+			<optgroup label='optgroup1'>
+				<option value='option1'>select-option1</option>
+				<option value='option2'>select-option2</option>			
+			</optgroup>
+			<optgroup label='optgroup2'>
+				<option value='option3'>select-option3</option>		
+			</optgroup>
+		</select>
+		
+
+
+		<fieldset>
+			<legend>fieldset-legend</legend>
+		</fieldset>
+		<output name='result'></output>
+		
+		<button>button</button>
+		
+	
+	</form>
+
+	
+	<a href="#">
+		<img alt="a" src="test.jpg" width='120' height='100' />
+	</a>
+	
+	<img alt="map" src="test.jpg" width='120' height='100' usemap='#mymap'/>
+	<map name='mymap'>
+	<area shape='rect' coords='30,30,150,150' href='#'/>
+	</map>
+	
+	<figure>
+		<img alt="figure" src="test.jpg"  width='120' height='100' usemap='#mymap'/>
+		<map name='mymap'>
+		<area shape='rect' coords='30,30,150,150' href='#'/>
+		</map>
+	</figure>
+	
+	<video src='test.mp4' width="300" height="150"  controls></video>
+	<!--poster='test.jpg'; prload="auto metadata none" muted loop autoplay-->
+	<audio src="test.mp3" controls ><!--<source src=""></source>--></audio>
+	
+	</body>
+</html>
